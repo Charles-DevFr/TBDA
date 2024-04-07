@@ -1,0 +1,207 @@
+Exercice 4.1
+
+Si Tutu <= Toto + 4 ET <> "OK" Alors
+    Tutu = Tutu - 1
+Sinon 
+    Tutu = Tutu + 1
+FinSi
+
+Exercice 4.2
+
+Variable H, M en Numérique
+Début
+Ecrire "Entrez les heures et les minutes :"
+Lire H, M
+    M = M + 1
+Si M = 60 Alors
+    M = 0
+    H = H + 1
+FinSi
+Si H = 24 Alors
+    H = 0
+FinSi
+Ecrire "Dans une minute il sera ", H, "heures", M, "minute"
+Fin
+
+Exercice 4.3
+
+Vairiable  H, M, S en Numérique
+Début
+Ecrire "Entrez les heures, les minutes et les secondes :"
+Lire H, M, S
+    S = S + 1 
+Si S = 60 Alors
+    S = 0
+    M = M + 1
+SinonSI M = 60 Alors
+    M = 0
+    H = H + 1
+SinonSi H = 24 Alors
+    H = 0
+FinSi
+Fin
+
+Exercice 4.4
+
+Variable N, P en Numérique
+Début
+Ecrire "Combien de photocopie ?"
+Lire N
+    Si N <= 10 Alors
+        P = N * 0.10
+    SinonSi N <= 30 Alors
+        P = 10 * 0.10 + N - 10 * 0.09
+    Sinon
+        P = 10 * 0.10 + N - 10 * 0.09 + N - 30 * 0.08
+    FinSi
+Ecrire "Le prix total est :" P
+Fin
+
+Exercice 4.5
+
+Variable age, en Caractére
+Variable sex, en Numérique
+Variable A, B en Booléen
+Début
+Ecrire "Quelle àge avez vous? "
+Lire age
+Ecrire "Etes vous H/F ?"
+Lire sex
+A = sex = "H" ET age > 20
+B = sex = "F" ET (age > 18 ET age < 35)
+Si A ou B Alors
+    Ecrire "Vous payez des impots"
+Sinon 
+    Ecrire "Vous ne payez pas d'impots"
+FinSi
+Fin
+
+Exercice 4.6
+
+Variable A, B, C, D en Numérique
+Variable C1, C2, C3, C4 en Booléen
+Début
+Ecrire "Entrez le scores des 4 candidats
+Lire A, B, C, D
+C1 = A > 50
+C2 = B > 50 ou C > 50 ou D > 50
+C3 = A >= B et A >= C et A >= D
+C4 = A >= 12,5
+Si C1 Alors
+  Ecrire “Elu au premier tour"
+Sinonsi C2 ou Non(C4) Alors
+  Ecrire “Battu, éliminé, sorti !!!”
+SinonSi C3 Alors
+  Ecrire "Ballotage favorable"
+Sinon
+  Ecrire "Ballotage défavorable"
+FinSi
+Fin
+
+Exercice 4.7
+
+Variable age, permis, accident, assuré, en Numérique
+Variable C1, C2, C3 en Booléen
+Variable situation en Caractére
+Début
+Ecrire "Entrez votre age"
+Lire age
+Ecrire "Entrez combien d'année avez vous etais assuré"
+Lire assuré
+Ecrire "Entrez combien d'année de permis vous avez"
+Lire permis
+Ecrire "Entrez le nombre d'accident que vous avez eu"
+Lire accident
+C1 = age >= 25
+C2 = permis >= 2
+C3 = assuré > 5
+Si Non(C1) ET Non(C2) Alors
+  Si accident = 0 Alors
+    situation ← "Rouge"
+  Sinon
+    situation ← "Refusé"
+  FinSi
+Sinonsi (Non(C1) et C2) OU (C1 et Non(C2)) Alors
+  Si accident = 0 Alors
+    situation ← "Orange"
+  SinonSi accident = 1 Alors
+    situation ← "Rouge"
+  Sinon
+    situation ← "Refusé"
+  FinSi
+Sinon
+  Si accident = 0 Alors
+    situation ← "Vert"
+  SinonSi accident = 1 Alors
+    situation ← "Orange"
+  SinonSi accident = 2 Alors
+    situation ← "Rouge"
+  Sinon
+    situation ← "Refusé"
+  FinSi
+FinSi
+Si C3 Alors
+  Si situation = "Rouge" Alors
+    situation ← "Orange"
+  SinonSi situation = "Orange" Alors
+    situation ← "Vert"
+  SinonSi situation = "Vert" Alors
+    situation ← "Bleu"
+  FinSi
+FinSi
+Ecrire "Votre situation : ", situation
+Fin
+
+Exercice 4.8
+
+Variables J, M, A, JMax en Numérique
+Variables VJ, VM, B en Booleen
+Début
+Ecrire "Entrez le jour"
+Lire J
+Ecrire "Entrez le mois"
+Lire M
+Ecrire "Entrez l'année"
+Lire A
+ Si M < 1 ou M > 12 Alors
+  Ecrire "Date Invalide"
+SinonSi M = 2 Alors
+  Si A dp 400 Alors
+    Si J < 1 ou J > 29 Alors
+      Ecrire "Date Invalide"
+    Sinon
+      Ecrire "Date Valide"
+    FinSi
+  SinonSi A dp 100 Alors
+    Si J < 1 ou J > 28 Alors
+      Ecrire "Date Invalide"
+    Sinon
+      Ecrire "Date Valide"
+    FinSi
+  SinonSi A dp 4 Alors
+    Si J < 1 ou J > 29Alors
+      Ecrire "Date Invalide"
+    Sinon
+      Ecrire "Date Valide"
+    FinSi
+  Sinon
+    Si J < 1 ou J > 28 Alors
+      Ecrire "Date Invalide"
+    Sinon
+      Ecrire "Date Valide"
+    FinSi
+  FinSi
+SinonSi M = 4 ou M = 6 ou M = 9 ou M = 11 Alors
+  Si J < 1 ou J > 30 Alors
+    Ecrire "Date Invalide"
+  Sinon
+    Ecrire "Date Valide"
+  FinSi
+Sinon
+  Si J < 1 ou J > 31 Alors
+    Ecrire "Date Invalide"
+  Sinon
+    Ecrire "Date Valide"
+  FinSi
+FinSi
+Fin

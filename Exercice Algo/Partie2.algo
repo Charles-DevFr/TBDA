@@ -1,0 +1,35 @@
+Exercice 2,1
+
+231
+462
+
+Exercice 2,2
+
+Variables nb, carre 
+Début
+Ecrire "Entrez un nombre :"
+Lire = nb
+carrre = nb * nb
+Ecrire "Son carré est : ", carre
+Fin
+
+Exercice 2,3
+
+Variables prix_article nb_ article prix_HT taux_TVA prix_TTC
+Début
+Ecrire "Entrez le prix HT :"
+Lire = prix_HT
+Ecrire "Entrez le nombre d’article :"
+Lire = nb_article
+Ecrire "Entrez le taux de TVA :"
+Lire = taux_TVA
+prix_TTC = nb_article * prix_HT * (1 + taux_TVA)
+Ecrire "Le prix TTC est :", prix_TTC
+Fin
+
+Exercice 2,4
+
+string[1] "belle marquise"
+string[2] "vos beaux yeux"
+string[3] "me font"
+string[4] "mourir d’amour"

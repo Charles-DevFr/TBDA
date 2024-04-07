@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact JARDITOU</title>
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <header>
+            <div class="entete">
+                <img class="logo" src="images/jarditou_logo.jpg" alt="JARDITOU logo">
+                <span class="jardin"> Tout le jardin</span>
+            </div>
+        </header>
+            <ul>
+            <li><a class="accueil" href="Jarditou.html" title="Accueil">Accueil</a></li>
+            <li><a class="accueil" href="Jarditou_page2.html" title="Tableau">Tableau</a></li>
+            <li><a class="accueil" href="jarditou_page3.html" title="Formulaire">Formulaire</a></li>
+            </ul>
+            <img class="promotion" src="images/promotion.jpg" alt="promotion">
+        <h1>Contact</h1>
+        <p>* Ces zones sont obligatoires</p>
+        <fieldset>
+            <legend>Vos coordonnées</legend><p>
+                <label for="nom">Votre nom* :</label> <input type="text" name="nom" id="nom" required><p>
+                <label for="prenom">Votre prénom* :</label> <input type="text" name="prenom" id="prenom" required><p>
+                <label for="sexe">Sexe* :</label> <input type="text" name="sexe" id="sexe">
+                <input type="radio" name="sexe" value="Féminin" required> Féminin
+                <input type="radio" name="sexe" value="Masculin"> Masculin<p>
+                <label for="date">Date de naissance* :</label> <input type="date" name="ddn" id="date" required><p>
+                <label for="codepostal">Code postal* :</label> <input type="text" name="codepostal" id="codepostal" required><p>
+                <label for="adresse">Adresse :</label> <input type="text" name="adresse" id="adresse"><p>
+                <label for="ville">Ville :</label> <input type="text" name="ville" id="ville"><p>
+                <label for="email">Email* :</label> <input type="email" name="email" id="email" placeholder="Charles@DEV.fr" required><p>
+        </fieldset><br>
+        <fieldset>
+            <legend>Votre demande</legend><p>
+                <label for="sujet">Sujet* :</label> <input type="text" name="sujet" id="sujet">
+                <select required>
+                    <option value="">Veuillez selectionner un sujet</option>
+                    <option value="Mescommandes">Mes commandes</option>
+                    <option value="Questionsurunproduit">Question sur un produit</option>
+                    <option value="Réclamation">Réclamation</option>
+                    <option value="Autres">Autres</option>
+                </select><br><br>
+                <label for="Votrequestion">Votre question* :</label> <input type="text" name="Votrequestion" id="Votrequestion">
+                <textarea name="commentaire" rows="2" cols="20" required></textarea>
+        </fieldset><br><br>
+        <input type="checkbox" name="accepte" value="accepte" required> * J'accepte le traitement informatique de ce formulaire <br><br>
+        <button name="Envoyer">Envoyer</button>
+        <button name="Annuler">Annuler</button>
+        <footer>
+            <hr>
+            <br>
+            <ul>
+                <li><a class="accueil" href="Jarditou.html" title="Accueil">Mention légales</a></li>
+                <li><a class="accueil" href="Jarditou_page2.html" title="Tableau">Horaires</a></li>
+                <li><a class="accueil" href="jarditou_page3.html" title="Contact">Plan du site</a></li>
+            </ul>  
+        </footer>
+    </html>

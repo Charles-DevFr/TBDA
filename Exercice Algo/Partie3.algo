@@ -1,0 +1,83 @@
+Exercice 3,1
+
+Variable nb en Entier
+Début
+Ecrire "Entez un nombre :"
+Lire = nb
+Si nb > 0 alors
+	Ecrire "Le nombre est positif"
+Sinon
+	Ecrire "Le nombre est négatif"
+Finsi
+Fin
+
+Exercice 3,2
+
+Variable nb1, nb2 en Entier
+Début
+Ecrire "Entrez deux nombres"
+Lire = nb1, nb2
+Si (nb1 > 0 ET nb2) > 0 OU (nb1 < 0 ET nb2) > 0 alors
+    Ecrire "Leur produit est positif"
+Sinon
+    Ecrire "Leur produit est négatif"
+    Finsi
+Fin
+
+Exercice 3,3
+
+Variable A, B, C, en caractére
+Début
+Ecrire "Entrez trois noms"
+Lire = A, B, C
+Si A < B ET B < C alors
+    Ecrire "Ces noms sont dans l'ordre alphabétique"
+Sinon
+    Ecrire "Ces noms ne sont pas dans l'ordre alphabétique"
+Finsi
+Fin
+
+Exercice 3.4
+
+Variable nb en Entier
+Début
+Ecrire "Entrez un nombre"
+Lire = nb
+Si nb < 0 alors
+    Ecrire "Ce nombre est négatif"
+SinonSi nb = 0 alors
+    Ecrire "Ce nombre est nul"
+Sinon nb > 0 alors
+    Ecrire "Ce nombre est positif"
+Finsi
+Fin
+
+Exercice 3.5
+
+Variante nb1, nb2 en Entier
+Ecrire "Entrez deux nombres"
+Lire = nb1, nb2
+Si nb1 = 0 ou nb2 = 0 alors
+    Ecrire "Le produit est nul"
+SinonSi (nb1 < 0 et nb2 < 0) ou (nb1 > 0 ou nb2 > 0) alors
+    Ecrire "Le produit est positif"
+Sinon 
+    Ecrire "Le produit est négatif"
+Finsi
+Fin
+
+Exercice 3.6
+
+Variante age en Entier
+Ecrire "Quel est votre age ?"
+Lire = age
+Si age >= 6 alors
+    Ecrire "Poussin"
+SinonSi age >= 8 alors
+    Ecrire "Pupille"
+SinonSi age >= 10 alors
+    Ecrire "Minime"
+SinonSi age >= 12 alors
+    Ecrire "Cadet"
+Finsi
+Fin
